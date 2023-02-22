@@ -31,7 +31,7 @@ const Projects = (props: Props) => {
       <h3 className='absolute top-24 uppercase tracking-[15px] md:tracking-[25px] md:text-2xl text-[1.2rem] text-gray-500'>Projects</h3>
       
 
-      <div className='relative overflow-x-scroll snap-x w-full flex overflow-y-hidden snap-mandatory z-20'>
+      <div className='relative overflow-x-scroll snap-x w-full flex overflow-y-hidden snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
         {
           projects.map((project, i)=>(
             <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-1 items-center justify-center p-20 md:p-40 h-screen'>
