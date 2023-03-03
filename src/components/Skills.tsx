@@ -1,7 +1,7 @@
 import Skill from '@/Utils/Skill'
 import { motion } from 'framer-motion'
 import React from 'react'
-
+import {skillsData} from "../assets/data/skillsData"
 type Props = {}
 
 const intial = {
@@ -32,22 +32,11 @@ const Skills = (props: Props) => {
 
 
       <div className='grid grid-cols-4 md:grid-cols-6 gap-5 pt-14'>
-        <Skill directionLeft />
-        <Skill directionLeft />
-        <Skill directionLeft />
-        <Skill directionLeft />
-        <Skill directionLeft />
-        <Skill directionLeft />
-        <Skill directionLeft />
-        <Skill directionLeft />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        {
+          skillsData?.map((skill, i)=> {
+            return <Skill skill={skill} directionLeft />
+          })
+      }
       </div>
 
     </motion.div>
